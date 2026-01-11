@@ -85,6 +85,7 @@ const server = http.createServer((request, response) => {
     // создание потока чтения наших файлов
     const fileStream = fs.createReadStream(filePath);
 
+    // сразу ставим правильный заголовок
     response.setHeader("Content-Type", contentType);
 
     // создание крана, который соединяет озеро и кран
