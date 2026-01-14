@@ -19,7 +19,9 @@ const server = http.createServer(async (request, response) => {
             </form>    
         `);
     }
-    // обработка метода POST и страницы /save 
+
+    // обработка метода POST и страницы /save
+    // обработка нажатие кнопки на страницу /index
     else if (request.method === 'POST' && request.url === '/save') {
         // массив для хранения chunk
         const body = [];
